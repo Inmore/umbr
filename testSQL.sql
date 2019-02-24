@@ -3,7 +3,7 @@ insert into
    users(group_id) 
 values (1), (1), (1), (2), (1), (3);
 
-with temp_table as 
+with help_table as 
 (
    select
       - id + row_number() over (partition by group_id) as help_id,
@@ -17,8 +17,9 @@ select
    min(group_id) as group_id,
    count(id) as count 
 from
-   temp_table 
+   help_table 
 group by
    help_id 
 order by
    min_id
+   
