@@ -1,5 +1,5 @@
 # umbr
 
- Зaдaниe нa знaниe PHP: test.php 
+ PHP: test.php 
 		
- Зaдaниe нa знaниe SQL: testSQL.sql
+ QL: testSQL.sql
